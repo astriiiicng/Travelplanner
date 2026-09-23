@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    color: #1f2937;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+}
+
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #eef6ff;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+.planner-card {
+    width: 430px;
+    background: white;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.planner-card h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #111827;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .planner-card {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+}
+
+.preference-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.preference-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.preference-item:hover {
+    border-color: #111827;
+    background: #f8fafc;
+}
+
+.preference-item input {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.preference-item span {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .preference-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.plan-button {
+    width: 100% !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 9999 !important;
+
+    margin-top: 25px;
+    padding: 16px 20px;
+
+    border: none !important;
+    border-radius: 14px;
+
+    background: #172033 !important;
+    color: white !important;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer !important;
+    pointer-events: auto !important;
+
+    opacity: 1 !important;
+}
+
+.plan-button:hover {
+    background: #27344d !important;
+}
